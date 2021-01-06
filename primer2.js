@@ -23,14 +23,14 @@ $(function () {
     });
     $('[data-sqr]').on('click', function() {
         if ($(this).data('sqr') == 'x2') {
-            $('.current__value').val(Math.pow(parseInt($('.current__value').val()),2));
+            $('.answer').text(Math.pow(parseInt($('.current__value').val()),2));
         }
         else if ($(this).data('sqr') == 'sqr') {
-            $('.current__value').val(Math.sqrt(parseInt($('.current__value').val())));
+            $('.answer').text(Math.sqrt(parseInt($('.current__value').val())));
         }
     });
     $('[data-four]').on('click', function() {
-        $('.current__value').val(1 / parseInt($('.current__value').val()));
+        $('.answer').text(1 / parseInt($('.current__value').val()));
     });
     $('[data-damir]').on('click', function() {
         $('.answer').text('Дамир иди коди, перестань жрать говно!');
